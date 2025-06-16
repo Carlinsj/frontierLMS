@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Frontier LMS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="logo.jpeg">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(120deg, #e3f2fd 0%, #d7eaff 100%);
+      min-height: 100vh;
+      color: #10243b;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 32px auto 0 auto;
+      background: #fff;
+      border-radius: 26px;
+      box-shadow: 0 8px 32px rgba(24, 64, 128, 0.10);
+      padding: 32px 40px 50px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 2px 10px rgba(24, 64, 128, 0.08);
+      margin-bottom: 12px;
+      border: 2px solid #e3f2fd;
+      background: #f0f8ff;
+    }
+    .title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #18427a;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 1.12rem;
+      color: #4c6e99;
+      margin-bottom: 28px;
+      text-align: center;
+    }
+    .grid {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 44px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+    .column {
+      background: #f7fafd;
+      border-radius: 18px;
+      box-shadow: 0 2px 16px rgba(64, 114, 178, 0.05);
+      padding: 26px 28px 18px 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 200px;
+    }
+    .column-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #17557a;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+    .section-btn {
+      width: 160px;
+      padding: 12px 0;
+      margin: 8px 0;
+      border: none;
+      border-radius: 9px;
+      background: linear-gradient(90deg, #256a8a 60%, #3386c7 100%);
+      color: #fff;
+      font-size: 1.06rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      box-shadow: 0 1px 6px rgba(24, 64, 128, 0.10);
+      transition: background 0.13s, transform 0.13s;
+      cursor: pointer;
+    }
+    .section-btn:hover {
+      background: linear-gradient(90deg, #3386c7 0%, #256a8a 90%);
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 4px 16px rgba(80, 160, 230, 0.12);
+    }
+    .footer {
+      margin-top: 34px;
+      text-align: center;
+      font-size: 1em;
+      color: #8aa2c2;
+      letter-spacing: 0.2px;
+    }
+    @media (max-width: 1000px) {
+      .grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+      }
+      .container {
+        padding: 22px 6vw 38px 6vw;
+      }
+    }
+    @media (max-width: 700px) {
+      .container {
+        padding: 12px 0 18px 0;
+        max-width: 99vw;
+      }
+      .title {
+        font-size: 1.38rem;
+      }
+      .column {
+        padding: 16px 10vw 10px 10vw;
+        min-width: 150px;
+      }
+      .section-btn {
+        width: 100%;
+        min-width: 90px;
+        font-size: 0.96rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.jpeg" alt="Frontier LMS Logo" class="logo" onerror="this.style.display='none'">
+    <div class="title" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/Ep1V8Co1PJhEhjZBDwaG90AB03JHNDZiWtpse86mk1-eQw?e=U7Q7bN', '_blank')"
+     style="cursor: pointer;">Frontier LMS</div>
+    <div class="subtitle">A unified portal for Pre Sales, Sales, and Delivery content</div>
+    <div class="grid">
+      <!-- Sales Column -->
+      <div class="column">
+        <div class="column-title"
+     onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/Ev0exNClA4dAgwkAX5J79IgBEX-fSzGNZV6iGqVXfx8B1g?e=uNmuiU', '_blank')"
+     style="cursor: pointer;">Sales</div>
+        <button class="section-btn" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/Et0d3PjpxexOjImb7rrS3bkBUq81mk_lszXgcpHL2NKDVQ?e=q3Oq4z', '_blank')">AWS</button>
+        <button class="section-btn" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/El9PkvQHabVOtwJiyynxDywBWzpGqz0Fqk9xs8d0ziCf_A?e=vu1grL', '_blank')">AZURE</button>
+        <button class="section-btn" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/Ek89WarClc9OmPGQBAmRguQB4A_RiC_W-odask2sYQVCKw?e=kHpiUp', '_blank')">GCP</button>
+        <button class="section-btn" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/EjwAQ-9RyS5DsS0LnU0mY38Bn5A-Ss8KmEG9dUztbpVNgw?e=gbc6bw', '_blank')">ACRONIS</button>
+        <button class="section-btn" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/EmcKd0STZSVKjs9UoEpmUIEB6D9XVSemvlB3zY2Kpb0JsQ?e=QOvL06', '_blank')">NC2</button>
+        <button class="section-btn" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/Ep2e2KMu6KBIo-GaNoKs0iUBGFavumgdkOmp82zPdBVJzw?e=zW3lOp', '_blank')">SECURITY</button>
+      </div>
+      <!-- Presales Column -->
+       <div class="column">
+        <div class="column-title"
+     onclick="window.open('https://crimsonteam-my.sharepoint.com/my?id=%2Fpersonal%2Fpresales%5Fcrimsoncloud%5Fin%2FDocuments%2FFrontier%20LMS%2FPresales&ga=1', '_blank')" 
+     style="cursor: pointer;">Presales</div>
+        <button class="section-btn" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/En4dPWEgW3JFi5rD_-IkIEoBI5eHs7mBfjsMff8jM6y2xA?e=DwcaRf', '_blank')">AWS</button>
+        <button class="section-btn" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/EuQQBXrPII1DqLawkwI09K8BrTLbFI0frATymq5VtCLGng?e=SVVnkO', '_blank')">AZURE</button>
+        <button class="section-btn" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/Eqc_3VETuL5LiWUuOzZOj6ABqPDYCFdxeFUfG200_gSU0w?e=byuGfe', '_blank')">GCP</button>
+        <button class="section-btn" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/EsQ_gnhVvqVJoZaDq_KQUDcBQJoSd_s9JxlNKBznzDBYiA?e=F2fXdL', '_blank')">ACRONIS</button>
+        <button class="section-btn" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/Eg5_1rOUMExFhlt9yH7DkWwB6Lt-zENWOXxlSxX85Il4ig?e=2MHleA', '_blank')">NC2</button>
+        <button class="section-btn" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/Er9P3a6h43lHugrcBVvTIgoBmsQYDoXt3Ye2uuoUyTYWAw?e=esl6Mi', '_blank')">SECURITY</button>
+      </div>
+      <!-- Delivery Column -->
+      <div class="column">
+        <div class="column-title" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/EkVx2SpUhbVGmz2GFaVPIg0B-mbnYY3Rv1A5EY-rM6Bj9A?e=57M3uO', '_blank')"
+     style="cursor: pointer;"
+     >Delivery</div>
+        <button class="section-btn" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/Eq13NjvxOG9JisWfv8y6GbUB1cBoA8Kf25INOimlH4fO1Q?e=RpHfwp', '_blank')">AWS</button>
+        <button class="section-btn" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/EquLDOD6FAdOizpbkEz2T2MB8r_-zD94EKD-XWw0AWbB5A?e=W6N5wU', '_blank')">AZURE</button>
+        <button class="section-btn" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/EmYXwJXKar9LjtELbLx7-20Bek1dnd4CdBDImBNP897Lvg?e=1Hh8Sy', '_blank')">GCP</button>
+        <button class="section-btn" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/Eo4krfOA4HhIuu5sRZNa0GwBuPrAEXLhYOEN2mVwKLOmvg?e=08Nc7n', '_blank')">ACRONIS</button>
+        <button class="section-btn" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/EjsqO5M3P7lOvOFA2tWaDKAB_1y3UFQbdfS7o3NU2g7zpg?e=DPP6by', '_blank')">NC2</button>
+        <button class="section-btn" onclick="window.open('https://crimsonteam-my.sharepoint.com/:f:/g/personal/presales_crimsoncloud_in/EkddAAba0VJHs03d7xXTkWoB67sAaiCkjy3wHjuy9GUT5w?e=bZMGKx', '_blank')">SECURITY</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function showPlaceholder(main, section) {
+      alert(`Placeholder: This would open "${main} > ${section}" content from OneDrive.`);
+    }
+  </script>
+</body>
+</html>
